@@ -31,6 +31,7 @@ public class ProductService {
         } else {
             products = repository.findAll(pageable);
         }
+        System.out.println("getALL*******************************");
         return products.map(ProductResponse::from);
     }
 
